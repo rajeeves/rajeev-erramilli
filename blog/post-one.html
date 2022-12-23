@@ -6,8 +6,8 @@
     <meta name="viewport" 
       content="width=device-width, initial-scale=1.0">
 
-    <title>//rajeev.erramil.li/</title>
-    <meta name="description" content="about me">
+    <title>A day of my life</title>
+    <meta name="description" content="Story of a relaxing day.">
 
     <!-- generics: classic -->
 <link rel="shortcut icon" href="/favicon.ico">
@@ -44,10 +44,10 @@
 <meta name="theme-color" content="#000000"
 
     <!-- Open graph -->
-    <meta property="og:title" content="//rajeev.erramil.li/">
-    <meta property="og:description" content="about me">
+    <meta property="og:title" content="A day of my life">
+    <meta property="og:description" content="Story of a relaxing day.">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="http://localhost:8080/assets/img/root/index.jpg"/>
+    <meta property="og:image" content="http://localhost:8080/assets/img/blog/post-one.jpg"/>
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="675" />
 
@@ -259,46 +259,55 @@
 
   <style>
     
-    /* p {
-  color: blue;
-} */
-
-picture {
-  display: block;
-  padding: 10px;
+    table {
+  padding: 0;
 }
 
-/* img {
-  max-width: 200px;
-} */
-
-main {
-  display: grid;
-  justify-items: center;
-  margin-top: 10px
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-main .pic,main img {
-  border-radius: 20px
+.dark-mode table tr {
+  background-color: grey;
 }
 
-main .pic-wrapper {
-  margin: 10px;
-  max-width: 90vw
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
 }
 
-article {
-  border-radius: 10px;
-  border: 2px solid;
-  padding: 0 20px;
-  margin: 10px;
-  background: #fff;
-  transition: box-shadow .4s ease-in-out 0s,background-color .4s ease-in-out 0s
+.dark-mode table tr:nth-child(2n) {
+  background-color: slategray;
 }
 
-.dark-mode article {
-  background: #2e3440
+table tr th {
+  font-weight: 700;
+  border: 1px solid #ccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
 }
+
+table tr td {
+  border: 1px solid #ccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td :first-child,
+table tr th :first-child {
+  margin-top: 0;
+}
+
+table tr td :last-child,
+table tr th :last-child {
+  margin-bottom: 0;
+}
+
+
   
   </style>
 
@@ -308,22 +317,123 @@ article {
     <img id="color-scheme-toggle" width="36px"
       src="http://localhost:8080/assets/img/icons/dark.svg" alt="toggle dark mode" />
     <div class="textbox">
-      <h1>//rajeev.erramil.li/</h1>
+      <h1>A day of my life</h1>
     </div>
     <p></p>
     
+<!-- the content -->
 <main>
+  <article><h1>A day of my life</h1>
+<p>Written in <strong>May 20, 2020</strong>.</p>
+<p>I do nothing and sleep all day.</p>
+<!-- REMOVEABLE: feel free to remove / replace any content on this page -->
+<table>
+<thead>
+<tr>
+<th>fruit</th>
+<th>color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>apple</td>
+<td>red</td>
+</tr>
+<tr>
+<td>durian</td>
+<td>green</td>
+</tr>
+<tr>
+<td>pear</td>
+<td>yellow</td>
+</tr>
+</tbody>
+</table>
+<h1>Youtube video demo</h1>
+<div class="video-wrapper">     <iframe src="https://www.youtube.com/embed/GpckCAcAgMk"         frameborder="0" allowfullscreen                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">     </iframe> </div>
+<h1>Prism code syntax highlight demo</h1>
+<pre class="language-js"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'toggle color scheme'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'testing syntax highlight demo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</article>
+  
+  
+  
+  
+  
+
+  <style>
+    
+    article {
+  width: 84vw;
+  max-width: 800px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+  
+  </style>
 
 </main>
+<!-- the structured data -->
 
-
-
-
-
-<p>hello! i am a physicist interested in the ways that symmetry and consistency can help us understand the space of physical theories. i build mathematical and computational tools to map out this theory space with applications from high-energy to condensed matter. i'm currently based at yale university en route to a phd this spring.</p>
-
-<p>i'm a big believer in the role that computers can play in formal theory and the role that formal(ish) mathematics can play in computation.
-</p>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "@id": "http://localhost:8080/blog/post-one",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http://localhost:8080/blog/post-one"
+    },
+    "url": "http://localhost:8080/blog/post-one",
+    "headline": "Story of a relaxing day.",
+    "description": "A day of my life",
+    "audience": "web developers and designers",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://localhost:8080/assets/img/blog/post-one.jpg",
+      "height": 675,
+      "width": 1200
+    },
+    "dateCreated": "Wed May 20 2020 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "datePublished": "Wed May 20 2020 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "dateModified": "Wed May 20 2020 00:00:00 GMT+0000 (Coordinated Universal Time)",
+    "articleSection": "Blog",
+    "author": {
+      "@type": "Person",
+      "name": "Rajeev Erramilli",
+      "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:8080/assets/img/your_photo.jpg",
+        "height": 1024,
+        "width": 1024
+      },
+      "url": "http://localhost:8080"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "@id": "http://localhost:8080",
+        "name": "Rajeev S. Erramilli",
+        "url": "http://localhost:8080",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://localhost:8080/assets/img/your_photo.jpg",
+          "height": 1024,
+          "width": 1024
+        }
+    }
+  }
+</script>
     
   
   
@@ -396,22 +506,7 @@ article {
 
   <script>
     
-    {
-  const toggleEl = document.querySelector('#color-scheme-toggle');
-  const DARK = 'dark';
-  const LIGHT = 'light';
-  const COLOR_SCHEME_CHANGED = 'colorSchemeChanged';
-
-  toggleEl.addEventListener(COLOR_SCHEME_CHANGED, (e) => {
-    const isDark = e.detail === DARK;
-    const imgEl = document.querySelector(`#profilePhoto`);
-    const mode = [DARK, LIGHT];
-
-    if (isDark) mode.reverse();
-    imgEl.src = imgEl.src.replace(mode[0], mode[1]);
-  });
-}
-
+    
   
   </script>
 
