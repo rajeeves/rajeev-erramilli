@@ -1,47 +1,26 @@
 ---
-title: Home page 
-desc: This is home page 
+title: //rajeev.erramil.li/
+desc: about me
 ---
 {# REMOVEABLE: feel free to remove / replace any content on this page #}
-
-<div>
+<main>
+{# <div class="pic-wrapper" id="profilePhoto" style="width:200px">
+  <picture class="pic" style="padding-bottom:100%">
   <img id="profilePhoto" src="{{ env.base.img }}me-light.jpg">
-</div>
-{% set greeting = 'hello' %}
+  </picture>
+</div> #}
+</main>
 
-Yay, {{ greeting | upper }} world!
-
-<ul>
+{# <ul>
   <li><a href="/blog">blog listing</a></li>
   <li><a href="/licenses">licenses</a></li>
   <li><a href="/blog/post-one">blog post one (demo table, date filter, youtube shortcode, prism code highlight)</a></li>
   <li><a href="/sitemap.txt">sitemap</a></li>
-</ul>
+</ul> #}
 
-<h2>testing images</h2>
+{# <h2>testing images</h2> #}
 
-<p>Lorem Ipsum blah blah</p>
+<p>hello! i am a physicist interested in the ways that symmetry and consistency can help us understand the space of physical theories. i build mathematical and computational tools to map out this theory space with applications from high-energy to condensed matter. i'm currently based at yale university en route to a phd this spring.</p>
 
-{% set images = [
-  ['aaa','jpg', true],
-  ['bbb', 'png', true],
-  ['ccc-256', 'jpg', false],
-  ['ddd', 'gif', false],
-  ['eee','svg', false],
-  ['favicon-fake', 'jpg', false]
-] %}
-
-{% for name, extension, isResponsive in images %}
-  <picture>
-    {%if isResponsive %}
-    <source media="(max-width: 500px)"
-      srcset="/assets/webp-500/{{name}}.webp">
-    <source media="(min-width: 501px)"
-      srcset="/assets/webp/{{name}}.webp">
-    <source media="(max-width: 500px)"
-      srcset="/assets/img-500/{{name}}.{{extension}}">
-    {% endif %}
-    
-    <img src="assets/img/{{name}}.{{extension}}" />
-  </picture>
-{% endfor %}
+<p>i'm a big believer in the role that computers can play in formal theory and the role that formal(ish) mathematics can play in computation.
+</p>

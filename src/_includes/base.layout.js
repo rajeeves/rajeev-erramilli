@@ -1,9 +1,4 @@
 {
-  const h1 = document.querySelector('h1');
-  h1.innerText = h1.innerText + ' | Surprise!';
-}
-
-{
   const bodyEl = document.querySelector('body');
   const toggleEl = document.querySelector('#color-scheme-toggle');
   const prismEl = document.querySelector('#prism-css');

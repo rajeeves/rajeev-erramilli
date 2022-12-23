@@ -1,9 +1,4 @@
 {
-  const p = document.querySelector('p');
-  p.innerText = p.innerText + ' yay!';
-}
-
-{
   const toggleEl = document.querySelector('#color-scheme-toggle');
   const DARK = 'dark';
   const LIGHT = 'light';

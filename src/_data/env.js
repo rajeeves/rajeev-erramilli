@@ -31,8 +31,5 @@ module.exports = {
     favicons: `${baseUrl}${dir.favicons}`,
     css: `${baseUrl}${dir.css}`,
     icons: `${baseUrl}${dir.icons}`,
-  },
-  tracking: {
-    gtag: 'your_tracking_id'
   }
 };

@@ -6,8 +6,8 @@
     <meta name="viewport" 
       content="width=device-width, initial-scale=1.0">
 
-    <title>Home page</title>
-    <meta name="description" content="This is home page">
+    <title>//rajeev.erramil.li/</title>
+    <meta name="description" content="about me">
 
     <!-- generics: classic -->
 <link rel="shortcut icon" href="/favicon.ico">
@@ -44,34 +44,14 @@
 <meta name="theme-color" content="#000000"
 
     <!-- Open graph -->
-    <meta property="og:title" content="Home page">
-    <meta property="og:description" content="This is home page">
+    <meta property="og:title" content="//rajeev.erramil.li/">
+    <meta property="og:description" content="about me">
     <meta property="og:type" content="article">
     <meta property="og:image" content="http://localhost:8080/assets/img/root/index.jpg"/>
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="675" />
-    <!-- Twitter -->
-    <meta name="twitter:title" content="Home page">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@yourUsername">
-    <meta name="twitter:description" content="This is home page">
-    <meta name="twitter:image" content="http://localhost:8080/assets/img/root/index.jpg">
-    <meta name="twitter:creator" content="@yourUsername">
 
     
-
-    
-    <script async 
-      src="https://www.googletagmanager.com/gtag/js?id=your_tracking_id">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'your_tracking_id');
-    </script>
 
     
     
@@ -84,28 +64,190 @@
 
   <style>
     
-    h1 {
-  background: red;
-}
+                @layer base,
+            component,
+            page;
 
-body {
-  background-color: white;
-  color: black;
-  transition: background-color 300ms ease-in-out 0s;
-}
+            .textbox {
+              /* top:20px; */
+              background-color: rgb(209,209,209);
+              color: darkslategray;
+              position: relative;
+              margin: 0 auto;
+              /* position: relative;
+              top: 80px;
+              left: 80px; */
+              /* margin-left: 80px; */
+              width: 60%;
+              border:2px solid darkslategray;
+              white-space: normal;
+            }
+            .dark-mode .textbox {
+              background-color: rgb(47,47,47);
+              color: antiquewhite;
+              border:2px solid antiquewhite;
+            }
+            h1 {
+              text-align: center;
+              margin: 20px
+            }
+            body {
+              background-color: #eceff4;
+              color: #4c566a;
+              font-family: Fira Code, monospace;
+              font-size: 18px;
+              min-height: 100vh;
+              min-height: -webkit-fill-available;
+              transition: background-color .3s ease-in-out 0s
+            }
 
-body.dark-mode {
-  background-color: black;
-  color: white;
-}
+            body.no-js nav #color-scheme-toggle {
+              display: none
+            }
 
-.dark-mode a {
-  color: lightblue;
-}
+            body.dark-mode {
+              background-color: #242933;
+              color: #eceff4
+            }
 
-.dark-mode img {
-  filter: grayscale(30%);
-}
+            p {
+              line-height: 1.6
+            }
+
+            nav {
+              display: flex;
+              justify-content: space-between;
+              padding: 4px 10px;
+              margin-bottom: 10px
+            }
+
+            nav #color-scheme-toggle {
+              background: #d8dee9;
+              padding: 0 10px;
+              border-radius: 4px;
+              width: 16px;
+              height: 36px;
+              transition: background-color .3s ease-in-out 0s
+            }
+
+            .dark-mode nav #color-scheme-toggle {
+              background: rgba(46, 52, 64, .9)
+            }
+
+            nav #color-scheme-toggle:hover {
+              background-color: rgba(229, 233, 240, .75)
+            }
+
+            .dark-mode nav #color-scheme-toggle:hover {
+              background-color: rgba(76, 86, 106, .9)
+            }
+
+            nav #logo {
+              color: #2e3440;
+              font-weight: 700;
+              text-decoration: none;
+              padding: 10px;
+              border-radius: 4px
+            }
+
+            .dark-mode nav #logo {
+              color: #eceff4
+            }
+
+            @layer base {
+              main a {
+                color: #194f86;
+                text-decoration: none;
+                border-bottom: 1px solid;
+              }
+            }
+
+            .dark-mode main a {
+              color: #88c0d0
+            }
+
+            .pic {
+              display: block;
+              width: 100%;
+              position: relative
+            }
+
+            .pic img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%
+            }
+
+            .dark-mode img {
+              filter: grayscale(30%)
+            }
+
+            .pic {
+              border-radius: 10px;
+              animation: fading-light 1.5s infinite;
+              background-color: #fff
+            }
+
+            .dark-mode .pic {
+              animation: fading-dark 1.5s infinite;
+              background-color: #2e3440
+            }
+
+            @keyframes fading-light {
+              0% {
+                background-color: #fff
+              }
+
+              50% {
+                background-color: rgb(255, 255, 255, .5)
+              }
+
+              100% {
+                background-color: #fff
+              }
+            }
+
+            @keyframes fading-dark {
+              0% {
+                background-color: #2e3440
+              }
+
+              50% {
+                background-color: rgb(46, 52, 64, .5)
+              }
+
+              100% {
+                background-color: #2e3440
+              }
+            }
+
+            article {
+              max-width: 600px
+            }
+
+            main strong {
+              color: #194f86;
+              font-weight: 400
+            }
+
+            .dark-mode main strong {
+              color: #88c0d0
+            }
+
+            .quick-access {
+              display: flex;
+              justify-content: space-between;
+              font-size: smaller;
+              padding: 10px 0;
+              font-size: smaller;
+              text-align: center
+            }
+
+            .quick-access span {
+              padding: 0 12px
+            }
   
   </style>
 
@@ -117,17 +259,45 @@ body.dark-mode {
 
   <style>
     
-    p {
+    /* p {
   color: blue;
-}
+} */
 
 picture {
   display: block;
   padding: 10px;
 }
 
-img {
+/* img {
   max-width: 200px;
+} */
+
+main {
+  display: grid;
+  justify-items: center;
+  margin-top: 10px
+}
+
+main .pic,main img {
+  border-radius: 20px
+}
+
+main .pic-wrapper {
+  margin: 10px;
+  max-width: 90vw
+}
+
+article {
+  border-radius: 10px;
+  border: 2px solid;
+  padding: 0 20px;
+  margin: 10px;
+  background: #fff;
+  transition: box-shadow .4s ease-in-out 0s,background-color .4s ease-in-out 0s
+}
+
+.dark-mode article {
+  background: #2e3440
 }
   
   </style>
@@ -137,81 +307,23 @@ img {
   <body>
     <img id="color-scheme-toggle" width="36px"
       src="http://localhost:8080/assets/img/icons/dark.svg" alt="toggle dark mode" />
-    <h1>Home page</h1>
+    <div class="textbox">
+      <h1>//rajeev.erramil.li/</h1>
+    </div>
+    <p></p>
     
+<main>
 
-<div>
-  <img id="profilePhoto" src="http://localhost:8080/assets/img/me-light.jpg">
-</div>
-
-
-Yay, HELLO world!
-
-<ul>
-  <li><a href="/blog">blog listing</a></li>
-  <li><a href="/licenses">licenses</a></li>
-  <li><a href="/blog/post-one">blog post one (demo table, date filter, youtube shortcode, prism code highlight)</a></li>
-  <li><a href="/sitemap.txt">sitemap</a></li>
-</ul>
-
-<h2>testing images</h2>
-
-<p>Lorem Ipsum blah blah</p>
+</main>
 
 
 
 
-  <picture>
-    
-    <source media="(max-width: 500px)"
-      srcset="/assets/webp-500/aaa.webp">
-    <source media="(min-width: 501px)"
-      srcset="/assets/webp/aaa.webp">
-    <source media="(max-width: 500px)"
-      srcset="/assets/img-500/aaa.jpg">
-    
-    
-    <img src="assets/img/aaa.jpg" />
-  </picture>
 
-  <picture>
-    
-    <source media="(max-width: 500px)"
-      srcset="/assets/webp-500/bbb.webp">
-    <source media="(min-width: 501px)"
-      srcset="/assets/webp/bbb.webp">
-    <source media="(max-width: 500px)"
-      srcset="/assets/img-500/bbb.png">
-    
-    
-    <img src="assets/img/bbb.png" />
-  </picture>
+<p>hello! i am a physicist interested in the ways that symmetry and consistency can help us understand the space of physical theories. i build mathematical and computational tools to map out this theory space with applications from high-energy to condensed matter. i'm currently based at yale university en route to a phd this spring.</p>
 
-  <picture>
-    
-    
-    <img src="assets/img/ccc-256.jpg" />
-  </picture>
-
-  <picture>
-    
-    
-    <img src="assets/img/ddd.gif" />
-  </picture>
-
-  <picture>
-    
-    
-    <img src="assets/img/eee.svg" />
-  </picture>
-
-  <picture>
-    
-    
-    <img src="assets/img/favicon-fake.jpg" />
-  </picture>
-
-
+<p>i'm a big believer in the role that computers can play in formal theory and the role that formal(ish) mathematics can play in computation.
+</p>
     
   
   
@@ -221,11 +333,6 @@ Yay, HELLO world!
   <script>
     
     {
-  const h1 = document.querySelector('h1');
-  h1.innerText = h1.innerText + ' | Surprise!';
-}
-
-{
   const bodyEl = document.querySelector('body');
   const toggleEl = document.querySelector('#color-scheme-toggle');
   const prismEl = document.querySelector('#prism-css');
@@ -290,11 +397,6 @@ Yay, HELLO world!
   <script>
     
     {
-  const p = document.querySelector('p');
-  p.innerText = p.innerText + ' yay!';
-}
-
-{
   const toggleEl = document.querySelector('#color-scheme-toggle');
   const DARK = 'dark';
   const LIGHT = 'light';
