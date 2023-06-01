@@ -12,4 +12,17 @@
     if (isDark) mode.reverse();
     imgEl.src = imgEl.src.replace(mode[0], mode[1]);
   });
+
+  // var text = ["rajeev erramilli","//rajeev.erramil.li/","rajeev => erramilli"];
+  // var counter = 0;
+  // var elem = $("#title");
+  // setInterval(change, 3000);
+  // function change() {
+  //   elem.fadeOut(function(){
+  //       elem.html(text[counter]);
+  //       counter++;
+  //       if(counter >= text.length) { counter = 0; }
+  //       elem.fadeIn();
+  //   });
+  // }
 }

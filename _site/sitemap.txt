@@ -19,3 +19,6 @@
     http://localhost:8080/sitemap.txt
   
   
+  
+    http://localhost:8080/schedule
+  

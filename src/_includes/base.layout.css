@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code:300');
+
             @layer base,
             component,
             page;
@@ -30,6 +32,7 @@
               color: #4c566a;
               font-family: Fira Code, monospace;
               font-size: 18px;
+              font-weight: 300;
               min-height: 100vh;
               min-height: -webkit-fill-available;
               transition: background-color .3s ease-in-out 0s
