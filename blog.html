@@ -50,6 +50,8 @@
     <meta property="og:image" content="http://localhost:8080/assets/img/root/blog.jpg"/>
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="675" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
     
 
@@ -64,7 +66,9 @@
 
   <style>
     
-                @layer base,
+    @import url('https://fonts.googleapis.com/css?family=Fira+Code:300');
+
+            @layer base,
             component,
             page;
 
@@ -96,6 +100,7 @@
               color: #4c566a;
               font-family: Fira Code, monospace;
               font-size: 18px;
+              font-weight: 300;
               min-height: 100vh;
               min-height: -webkit-fill-available;
               transition: background-color .3s ease-in-out 0s
@@ -269,7 +274,7 @@
     <img id="color-scheme-toggle" width="36px"
       src="http://localhost:8080/assets/img/icons/dark.svg" alt="toggle dark mode" />
     <div class="textbox">
-      <h1>blog listing page</h1>
+      <h1 id="title" title=blog listing page>blog listing page</h1>
     </div>
     <p></p>
     
